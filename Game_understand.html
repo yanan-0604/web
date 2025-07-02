@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="one_title">魏垚：Game Understanding</h1>
+    <h2 class="two_title">
+        绪论
+    </h2>
+    <p>
+        整个游戏主循环主要包括3个过程，
+        begindraw(),开始绘制，其实就是clear    将窗口上的内容清空。
+        update()，更新，主要是处理输入，比如按键，鼠标等，并更新角色的位置。
+        draw()，绘制，主要是将更新完了渲染在窗口上。
+        然后根据时间戳来设置帧率，比如每秒60帧，每帧执行update()和draw()，这样就能保证游戏的流畅运行。
+    </p>
+    <h2>2D游戏</h2>
+    <p>
+        在2D游戏中有着重要的角色，精灵：其实就是，在素材上截图 不同的框架有不同的接口 将从素材pos(x,y,z)录入数据缓存区中，这也是渲染管道的一部分，
+        然后将缓存区的数据渲染到屏幕上。 就例如pos()整个接口取左上坐标，rect()取素材的大小，load()加载都缓存区，draw(pos(),rect())将素材渲染到
+        屏幕的某个位置。
+    </p>
+    <h2>
+        3D游戏
+    </h2>
+    <p>
+        
+    </p>
+</body>
+</html>
